@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大東JC 公式キャラクター大募集！— 大東市の小学生から作品を募集</title>
+<meta name="description" content="大東青年会議所（大東JC）創立55周年記念。大東市の小学生からオリジナル公式キャラクターを大募集！応募期間 2026年5月6日〜6月10日。">
+<meta property="og:title" content="大東JC 公式キャラクター大募集！">
+<meta property="og:description" content="大東市の小学生から大東JC公式キャラクターを大募集！2026/5/6〜6/10。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Hachi+Maru+Pop&family=Yusei+Magic&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FFF8E1;
+    --paper-2: #FFE9B0;
+    --ink: #1A1A1A;
+    --hot: #FF5588;
+    --gold: #FFD23F;
+    --shadow-sm: 3px 3px 0 var(--ink);
+    --max-w: 480px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-feature-settings: "palt";
+    line-height: 1.6;
+    font-weight: 500;
+  }
+  main { display: block; }
+  ruby rt { font-size: 0.5em; color: rgba(0,0,0,0.55); font-weight: 500; }
+  a { color: inherit; }
+  img { max-width: 100%; height: auto; display: block; }
+
+  /* デスクトップ表示でも幅制限：モバイル想定の縦長ページ */
+  @media (min-width: 481px) {
+    body { background: #f0ebd8; }
+    main, header.brand-bar, footer.footer-info {
+      max-width: var(--max-w);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /* セクション基本（中身は後続タスクで追加） */
+  section { padding: 26px 22px; position: relative; }
+  section.alt { background: var(--paper-2); }
+
+  /* セクション間ジグザグ仕切り */
+  section + section::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -12px; left: 0; right: 0;
+    height: 12px;
+    background-image:
+      linear-gradient(45deg, var(--ink) 25%, transparent 25%),
+      linear-gradient(-45deg, var(--ink) 25%, transparent 25%);
+    background-size: 12px 12px;
+    background-color: var(--ink);
+  }
+
+  /* フォーカス可視化 */
+  :focus-visible { outline: 3px solid var(--hot); outline-offset: 2px; }
+
+  .brand-bar {
+    background: white;
+    padding: 9px 16px;
+    border-bottom: 3px solid var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .brand-name {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+    line-height: 1.15;
+    flex: 1;
+  }
+  .brand-badge {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    opacity: 0.55;
+  }
+
+  .hero {
+    background: var(--gold);
+    border-bottom: 5px solid var(--ink);
+    overflow: hidden;
+    padding: 26px 22px 30px;
+  }
+  .hero::after {
+    content: '';
+    position: absolute; inset: -10% -10% auto auto;
+    width: 200px; height: 200px;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.10) 1.5px, transparent 2px);
+    background-size: 12px 12px;
+    transform: rotate(15deg);
+    pointer-events: none;
+  }
+  .bubble-tag {
+    display: inline-block;
+    background: white;
+    border: 3px solid var(--ink);
+    border-radius: 30px;
+    padding: 7px 14px;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    transform: rotate(-3deg);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+  }
+  .bubble-tag::after {
+    content: ''; position: absolute; bottom: -10px; left: 22px;
+    border-left: 8px solid transparent;
+    border-top: 10px solid var(--ink);
+  }
+  .bubble-tag::before {
+    content: ''; position: absolute; bottom: -6px; left: 24px;
+    border-left: 6px solid transparent;
+    border-top: 7px solid white; z-index: 1;
+  }
+  .hero-lead {
+    margin: 18px 0 4px;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 10.5px;
+    line-height: 1.55;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-lead .yr { color: var(--hot); }
+  .hero-title {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 28px;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    color: var(--hot);
+    text-shadow:
+      -1.5px -1.5px 0 var(--ink),
+      1.5px -1.5px 0 var(--ink),
+      -1.5px 1.5px 0 var(--ink),
+      1.5px 1.5px 0 var(--ink),
+      3px 3px 0 var(--ink);
+    display: inline-block;
+    transform: rotate(-1deg);
+    margin: 18px 0 0;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-catch {
+    margin-top: 16px;
+    background: white;
+    border: 2.5px solid var(--ink);
+    border-radius: 14px;
+    padding: 10px 12px;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 13px;
+    line-height: 1.5;
+    box-shadow: var(--shadow-sm);
+    transform: rotate(-1deg);
+    position: relative;
+    z-index: 1;
+  }
+  .hero-catch b { color: var(--hot); }
+  .cta-primary {
+    display: block;
+    margin-top: 20px;
+    background: var(--ink);
+    color: var(--gold);
+    padding: 16px 0;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    border: 3px solid var(--ink);
+    box-shadow: 5px 5px 0 var(--hot), 5px 5px 0 1px var(--ink);
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .cta-primary:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--hot), 7px 7px 0 1px var(--ink); }
+  .cta-primary:active { transform: translate(3px, 3px); box-shadow: 2px 2px 0 var(--hot); }
+  .hero-period {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .about {
+    background-image:
+      radial-gradient(circle, rgba(0,0,0,0.07) 1px, transparent 1.5px),
+      linear-gradient(180deg, var(--paper) 0%, var(--paper) 100%);
+    background-size: 9px 9px, auto;
+  }
+  .tag {
+    display: inline-block;
+    font-family: 'Mochiy Pop One', sans-serif;
+    padding: 6px 16px;
+    font-size: 14px;
+    background: var(--ink);
+    color: var(--gold);
+    letter-spacing: 1.5px;
+    transform: rotate(-1.5deg);
+    box-shadow: var(--shadow-sm);
+    border: 2px solid var(--ink);
+    border-radius: 4px;
+    font-weight: normal;
+    margin: 0;
+  }
+  .tag.red { background: var(--hot); color: white; transform: rotate(1.5deg); }
+  .about-tagline {
+    margin-top: 14px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.5;
+    background: var(--gold);
+    border: 2px solid var(--ink);
+    border-radius: 10px;
+    padding: 10px 12px;
+    box-shadow: var(--shadow-sm);
+  }
+  .about-tagline b { color: var(--hot); }
+  .qa-block {
+    margin-top: 14px;
+    background: white;
+    border: 2.5px solid var(--ink);
+    border-radius: 14px;
+    padding: 12px 14px 10px;
+    box-shadow: var(--shadow-sm);
+  }
+  .qa-block .q {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 13px;
+    margin: 0 0 6px;
+    font-weight: normal;
+  }
+  .qa-block .a {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 11.5px;
+    line-height: 1.7;
+    font-weight: 500;
+    color: rgba(0,0,0,0.85);
+    margin: 0;
+  }
+  .qa-block .a b { color: var(--hot); font-weight: 900; }
+  .qa-block .a .item { display: block; margin-top: 4px; }
+  .qa-block .a .lbl {
+    display: inline-block;
+    background: var(--gold);
+    border: 1.5px solid var(--ink);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 10.5px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+  .motto {
+    margin-top: 6px;
+    background: var(--gold);
+    border: 2.5px solid var(--ink);
+    border-radius: 14px;
+    padding: 12px 14px;
+    text-align: center;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    letter-spacing: 0.5px;
+    box-shadow: var(--shadow-sm);
+    transform: rotate(-1deg);
+  }
+  .motto-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 11px;
+    color: var(--hot);
+    font-family: 'Mochiy Pop One', sans-serif;
+    letter-spacing: 1.5px;
+  }
+  .motto-body {
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1.5;
+  }
+  .what-title {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 18px;
+    line-height: 1.45;
+    margin: 14px 0 10px;
+    font-weight: normal;
+  }
+  .what-sub {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 12px;
+    line-height: 1.7;
+    color: rgba(0,0,0,0.75);
+    font-weight: 500;
+    margin: 0;
+  }
+  .what-sub b { color: var(--hot); }
+
+  .step-grid { margin-top: 18px; }
+  .step {
+    display: flex;
+    align-items: flex-start;
+    background: white;
+    border: 2.5px solid var(--ink);
+    border-radius: 14px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: var(--shadow-sm);
+  }
+  .step:nth-child(1) { transform: rotate(-0.8deg); }
+  .step:nth-child(2) { transform: rotate(0.6deg); }
+  .step:nth-child(3) { transform: rotate(-0.4deg); }
+  .step-num {
+    background: var(--hot);
+    color: white;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border: 2.5px solid var(--ink);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 18px;
+    box-shadow: 2px 2px 0 var(--ink);
+  }
+  .step-body { margin-left: 14px; padding-top: 2px; flex: 1; }
+  .step-body b {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .step-body span {
+    display: block;
+    color: rgba(0,0,0,0.6);
+    font-size: 11px;
+    margin-top: 3px;
+    line-height: 1.5;
+  }
+
+  .req-9 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin-top: 18px;
+  }
+  .req-cell {
+    background: var(--gold);
+    border: 2.5px solid var(--ink);
+    border-radius: 12px;
+    padding: 12px 4px;
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 11px;
+    box-shadow: 2.5px 2.5px 0 var(--ink);
+    line-height: 1.3;
+  }
+  .req-cell.featured { background: var(--hot); color: white; }
+  .req-cell.featured .req-icon { color: white; }
+  .req-icon { display: block; font-size: 18px; margin-bottom: 4px; }
+  .req-cell:nth-child(1) { transform: rotate(-1deg); }
+  .req-cell:nth-child(2) { transform: rotate(0.5deg); }
+  .req-cell:nth-child(3) { transform: rotate(-0.5deg); }
+  .req-cell:nth-child(4) { transform: rotate(0.8deg); }
+  .req-cell:nth-child(5) { transform: rotate(-0.6deg); }
+  .req-cell:nth-child(6) { transform: rotate(0.4deg); }
+  .req-cell:nth-child(7) { transform: rotate(-0.7deg); }
+  .req-cell:nth-child(8) { transform: rotate(0.6deg); }
+  .req-cell:nth-child(9) { transform: rotate(-0.3deg); }
+
+  .born.halftone {
+    background-image:
+      radial-gradient(circle, rgba(0,0,0,0.07) 1px, transparent 1.5px),
+      linear-gradient(180deg, var(--paper) 0%, var(--paper) 100%);
+    background-size: 9px 9px, auto;
+  }
+  .born-body {
+    margin-top: 14px;
+    background: white;
+    border: 2.5px solid var(--ink);
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 12px;
+    line-height: 1.85;
+    color: rgba(0,0,0,0.85);
+    font-weight: 500;
+    box-shadow: var(--shadow-sm);
+  }
+  .born-body b { color: var(--hot); font-weight: 900; }
+  .born-arrow {
+    text-align: center;
+    margin: 8px 0 6px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 14px;
+    color: var(--hot);
+  }
+  .born-pop {
+    background: var(--gold);
+    border: 2.5px solid var(--ink);
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 12.5px;
+    line-height: 1.6;
+    text-align: center;
+    box-shadow: 2.5px 2.5px 0 var(--ink);
+    transform: rotate(-1deg);
+  }
+  .born-pop b { color: var(--hot); }
+
+  .rules-box {
+    margin-top: 14px;
+    background: white;
+    border: 2.5px solid var(--ink);
+    border-radius: 14px;
+    padding: 14px 16px;
+    box-shadow: var(--shadow-sm);
+  }
+  .rules-box ul {
+    margin: 0;
+    padding-left: 18px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 11.5px;
+    line-height: 1.75;
+    color: rgba(0,0,0,0.85);
+    font-weight: 500;
+  }
+  .rules-box li { margin-bottom: 8px; padding-left: 2px; }
+  .rules-box li::marker { color: var(--hot); font-weight: 900; }
+  .rules-box li b { color: var(--hot); font-weight: 900; }
+  .rule-note { font-size: 11px; color: rgba(0,0,0,0.55); }
+
+  .timeline { margin-top: 18px; padding-left: 4px; }
+  .timeline-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 2px dotted rgba(0,0,0,0.15);
+  }
+  .timeline-item:last-child { border-bottom: none; }
+  .t-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    background: var(--ink);
+    color: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border: 2px solid var(--ink);
+  }
+  .t-body { flex: 1; padding-top: 4px; }
+  .t-when {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 12.5px;
+    color: var(--hot);
+    letter-spacing: 0.5px;
+  }
+  .t-what {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .parents-box {
+    margin-top: 14px;
+    background: white;
+    border: 2.5px dashed var(--ink);
+    border-radius: 14px;
+    padding: 14px 16px;
+    box-shadow: var(--shadow-sm);
+  }
+  .parents-box ul {
+    margin: 0;
+    padding-left: 18px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 11.5px;
+    line-height: 1.8;
+    color: rgba(0,0,0,0.85);
+    font-weight: 500;
+  }
+  .parents-box li { margin-bottom: 6px; }
+  .parents-box li::marker { color: var(--hot); }
+  .parents-box b { color: var(--hot); }
+
+  .final-cta {
+    background: var(--gold);
+    text-align: center;
+    padding: 32px 22px 24px;
+    overflow: hidden;
+  }
+  .final-cta::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.07) 1px, transparent 1.5px);
+    background-size: 10px 10px;
+    pointer-events: none;
+  }
+  .final-ready {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 0 0 16px;
+    position: relative;
+  }
+  .final-credit {
+    margin: 18px 0 0;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 10.5px;
+    color: rgba(0,0,0,0.7);
+    line-height: 1.6;
+    position: relative;
+  }
+  .footer-info {
+    background: white;
+    padding: 18px 20px;
+    border-top: 3px solid var(--ink);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 10.5px;
+    line-height: 1.7;
+    color: rgba(0,0,0,0.75);
+  }
+  .footer-org {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 12.5px;
+    color: var(--ink);
+    margin: 0 0 6px;
+  }
+  .footer-address { font-style: normal; }
+  .footer-info a { color: var(--hot); text-decoration: none; }
+  .footer-info a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<header class="brand-bar">
+  <div class="brand-name">
+    <ruby>一般社団法人<rt>いっぱんしゃだんほうじん</rt></ruby><br>
+    <ruby>大東青年会議所<rt>だいとうせいねんかいぎしょ</rt></ruby>
+  </div>
+  <div class="brand-badge">DAITO JC · 55th</div>
+</header>
+
+<main>
+  <section class="hero" aria-label="ヒーロー">
+<div class="bubble-tag"><ruby>応募資格<rt>おうぼしかく</rt></ruby>：<ruby>大東市<rt>だいとうし</rt></ruby>の<ruby>小学生<rt>しょうがくせい</rt></ruby></div>
+
+<p class="hero-lead">
+  <span class="yr">大東JC 55<ruby>周年<rt>しゅうねん</rt></ruby><ruby>記念<rt>きねん</rt></ruby></span><br>
+  <ruby>想像力<rt>そうぞうりょく</rt></ruby>の<ruby>扉<rt>とびら</rt></ruby>を<ruby>開<rt>ひら</rt></ruby>け！０から１を<ruby>生<rt>う</rt></ruby>み<ruby>出<rt>だ</rt></ruby>す<ruby>創造<rt>そうぞう</rt></ruby>の<ruby>旅<rt>たび</rt></ruby>
+</p>
+
+<h1 class="hero-title">公式キャラクター<br>大募集！</h1>
+
+<p class="hero-catch"><b>君</b>が<ruby>考<rt>かんが</rt></ruby>えたキャラクターが<br><b><ruby>公式<rt>こうしき</rt></ruby>キャラ</b>に<ruby>変身<rt>へんしん</rt></ruby>？！</p>
+
+<a class="cta-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSehIFrp-2hXVtTgJXlEwKHVOvr9RqrP-deHixcchdWVtN24WA/viewform?usp=dialog" target="_blank" rel="noopener">▶ おうぼフォームへ</a>
+<p class="hero-period"><ruby>応募期間<rt>おうぼきかん</rt></ruby>　2026.5.6 → 6.10</p>
+  </section>
+  <section class="about" aria-labelledby="about-heading">
+<h2 class="tag" id="about-heading">★ <ruby>大東<rt>だいとう</rt></ruby><ruby>青年<rt>せいねん</rt></ruby><ruby>会議所<rt>かいぎしょ</rt></ruby>（JC）ってなに？</h2>
+
+<p class="about-tagline">〜 <ruby>大東市<rt>だいとうし</rt></ruby>をより<ruby>良<rt>よ</rt></ruby>くするための<br><b>「<ruby>大人<rt>おとな</rt></ruby>の<ruby>部活動<rt>ぶかつどう</rt></ruby>」</b> 〜</p>
+
+<div class="qa-block">
+  <h3 class="q">どんな<ruby>人<rt>ひと</rt></ruby>がいるの？</h3>
+  <p class="a">20<ruby>歳<rt>さい</rt></ruby>から40<ruby>歳<rt>さい</rt></ruby>までの、<b><ruby>情熱<rt>じょうねつ</rt></ruby>あふれる<ruby>若手<rt>わかて</rt></ruby>リーダー</b>たち。<br>ご<ruby>飯<rt>はん</rt></ruby><ruby>屋<rt>や</rt></ruby>さん、<ruby>大学<rt>だいがく</rt></ruby>の<ruby>先生<rt>せんせい</rt></ruby>、<ruby>会社<rt>かいしゃ</rt></ruby>の<ruby>社長<rt>しゃちょう</rt></ruby>さんなど、<ruby>職種<rt>しょくしゅ</rt></ruby>はバラバラ！</p>
+</div>
+
+<div class="qa-block">
+  <h3 class="q"><ruby>何<rt>なに</rt></ruby>をしているの？</h3>
+  <p class="a">
+    <span class="item"><span class="lbl">町を元気に</span> お<ruby>祭<rt>まつ</rt></ruby>りを<ruby>企画<rt>きかく</rt></ruby>したり、<ruby>町<rt>まち</rt></ruby>を<ruby>掃除<rt>そうじ</rt></ruby>したりします。</span>
+    <span class="item"><span class="lbl">自分をみがく</span> もっといいリーダーになるために、<ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>します。</span>
+    <span class="item"><span class="lbl">仲間をつくる</span> <ruby>日本<rt>にほん</rt></ruby><ruby>中<rt>じゅう</rt></ruby>、<ruby>世界<rt>せかい</rt></ruby><ruby>中<rt>じゅう</rt></ruby>のメンバーと<ruby>友達<rt>ともだち</rt></ruby>になります。</span>
+  </p>
+</div>
+
+<div class="qa-block">
+  <h3 class="q"><ruby>合言葉<rt>あいことば</rt></ruby>は？</h3>
+  <div class="motto">
+    <span class="motto-label">— Motto —</span>
+    <span class="motto-body"><ruby>明<rt>あか</rt></ruby>るい<ruby>豊<rt>ゆた</rt></ruby>かな<br><ruby>社会<rt>しゃかい</rt></ruby>をつくること</span>
+  </div>
+  <p class="a" style="margin-top:8px;text-align:center;"><ruby>大東市<rt>だいとうし</rt></ruby>を、もっと<ruby>楽<rt>たの</rt></ruby>しく、もっと<ruby>住<rt>す</rt></ruby>みやすくするために<ruby>活動<rt>かつどう</rt></ruby>しています！</p>
+</div>
+  </section>
+  <section class="what alt" aria-labelledby="what-heading">
+<h2 class="tag red" id="what-heading">なにを<ruby>募集<rt>ぼしゅう</rt></ruby>？</h2>
+<h3 class="what-title"><ruby>大東市<rt>だいとうし</rt></ruby>をモチーフにした<br>キャラクターをかいてね！</h3>
+<p class="what-sub"><ruby>大東市<rt>だいとうし</rt></ruby>の<b><ruby>好<rt>す</rt></ruby>きな<ruby>場所<rt>ばしょ</rt></ruby></b>や、<b><ruby>大東市<rt>だいとうし</rt></ruby>らしさ</b>をキャラクターに<ruby>盛<rt>も</rt></ruby>り<ruby>込<rt>こ</rt></ruby>もう！<br>えらばれたアイデアは<ruby>プロ<rt>ぷろ</rt></ruby>のイラストレーター<ruby>様<rt>さま</rt></ruby>が<ruby>本格的<rt>ほんかくてき</rt></ruby>なキャラクターにしてくれるよ！</p>
+  </section>
+  <section class="how" aria-labelledby="how-heading">
+<h2 class="tag" id="how-heading"><ruby>応募方法<rt>おうぼほうほう</rt></ruby> 3ステップ</h2>
+<div class="step-grid">
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body"><b>キャラクターを<ruby>描<rt>か</rt></ruby>こう</b><span><ruby>紙<rt>かみ</rt></ruby>でも<ruby>絵<rt>え</rt></ruby>かきソフトでもOK</span></div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body"><b>コンセプトを<ruby>考<rt>かんが</rt></ruby>えよう</b><span><ruby>名前<rt>なまえ</rt></ruby>・<ruby>性格<rt>せいかく</rt></ruby>・<ruby>特技<rt>とくぎ</rt></ruby>・<ruby>好<rt>す</rt></ruby>きな<ruby>場所<rt>ばしょ</rt></ruby>など、どんなキャラクターか<ruby>具体的<rt>ぐたいてき</rt></ruby>に！</span></div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body"><b>イラストを<ruby>撮影<rt>さつえい</rt></ruby>して<ruby>応募<rt>おうぼ</rt></ruby>フォームへ</b><span><ruby>写真<rt>しゃしん</rt></ruby>をアップロードして<ruby>送信<rt>そうしん</rt></ruby>！</span></div>
+  </div>
+</div>
+  </section>
+  <section class="needs alt" aria-labelledby="needs-heading">
+<h2 class="tag red" id="needs-heading"><ruby>応募<rt>おうぼ</rt></ruby>に<ruby>必要<rt>ひつよう</rt></ruby>なもの</h2>
+<div class="req-9">
+  <div class="req-cell featured"><span class="req-icon">🎨</span>イラスト</div>
+  <div class="req-cell"><span class="req-icon">📛</span><ruby>名前<rt>なまえ</rt></ruby></div>
+  <div class="req-cell"><span class="req-icon">😊</span><ruby>性格<rt>せいかく</rt></ruby></div>
+  <div class="req-cell"><span class="req-icon">⚡</span><ruby>特技<rt>とくぎ</rt></ruby></div>
+  <div class="req-cell"><span class="req-icon">🗺</span><ruby>好<rt>す</rt></ruby>きな<ruby>場所<rt>ばしょ</rt></ruby></div>
+  <div class="req-cell"><span class="req-icon">💧</span><ruby>弱点<rt>じゃくてん</rt></ruby></div>
+  <div class="req-cell"><span class="req-icon">🍙</span><ruby>好<rt>す</rt></ruby>きな<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby></div>
+  <div class="req-cell"><span class="req-icon">💬</span>くちぐせ</div>
+  <div class="req-cell"><span class="req-icon">🌟</span><ruby>夢<rt>ゆめ</rt></ruby>・<ruby>目標<rt>もくひょう</rt></ruby></div>
+</div>
+<p class="what-sub" style="margin-top:14px;text-align:center;"><ruby>絵<rt>え</rt></ruby>が<ruby>得意<rt>とくい</rt></ruby>じゃなくても<b><ruby>大丈夫<rt>だいじょうぶ</rt></ruby></b>！<br>アイデアやコンセプトも<ruby>大切<rt>たいせつ</rt></ruby>に<ruby>選考<rt>せんこう</rt></ruby>します。</p>
+</section>
+  <section class="born halftone" aria-labelledby="born-heading">
+<h2 class="tag" id="born-heading"><ruby>公式<rt>こうしき</rt></ruby>キャラはこう<ruby>生<rt>う</rt></ruby>まれる</h2>
+<div class="born-body">
+  <ruby>最優秀賞<rt>さいゆうしゅうしょう</rt></ruby>に<ruby>選<rt>えら</rt></ruby>ばれた<ruby>作品<rt>さくひん</rt></ruby>をもとに、<ruby>プロ<rt>ぷろ</rt></ruby>のイラストレーターと<ruby>相談<rt>そうだん</rt></ruby>しながら、<ruby>公式<rt>こうしき</rt></ruby>キャラクターを<ruby>完成<rt>かんせい</rt></ruby>させます。<br><br>
+  <b><ruby>最優秀賞<rt>さいゆうしゅうしょう</rt></ruby>に<ruby>選<rt>えら</rt></ruby>ばれても、そのままの<ruby>形<rt>かたち</rt></ruby>で<ruby>公式<rt>こうしき</rt></ruby>キャラクターになるとは<ruby>限<rt>かぎ</rt></ruby>りません。</b>
+</div>
+<div class="born-arrow">▼</div>
+<div class="born-pop"><ruby>プロ<rt>ぷろ</rt></ruby>の<ruby>手<rt>て</rt></ruby>で、みんなのアイデアが<ruby>融合<rt>ゆうごう</rt></ruby>した<br>「もっと<b><ruby>素敵<rt>すてき</rt></ruby></b>なキャラクター」に<ruby>生<rt>う</rt></ruby>まれ<ruby>変<rt>か</rt></ruby>わります。</div>
+</section>
+  <section class="rules" aria-labelledby="rules-heading">
+<h2 class="tag" id="rules-heading"><ruby>応募<rt>おうぼ</rt></ruby>のルール</h2>
+<div class="rules-box">
+  <ul>
+    <li><ruby>実在<rt>じつざい</rt></ruby>するキャラクターではなく<b>オリジナル</b>キャラクターを<ruby>作成<rt>さくせい</rt></ruby>してください。<br><span class="rule-note">（<ruby>他<rt>ほか</rt></ruby>のキャラクターや<ruby>作品<rt>さくひん</rt></ruby>に<ruby>似<rt>に</rt></ruby>ているものは<ruby>選考<rt>せんこう</rt></ruby>できない<ruby>場合<rt>ばあい</rt></ruby>があります。）</span></li>
+    <li><ruby>応募<rt>おうぼ</rt></ruby><ruby>作品<rt>さくひん</rt></ruby>は<b><ruby>未発表<rt>みはっぴょう</rt></ruby></b>のものに<ruby>限<rt>かぎ</rt></ruby>ります。</li>
+    <li><ruby>作品<rt>さくひん</rt></ruby>はキャラクターのイラストと<ruby>名前<rt>なまえ</rt></ruby>、コンセプト（どんなキャラクターか）を<ruby>応募<rt>おうぼ</rt></ruby>の<ruby>際<rt>さい</rt></ruby>、<ruby>記入<rt>きにゅう</rt></ruby>してください。</li>
+    <li><ruby>絵<rt>え</rt></ruby>が<ruby>得意<rt>とくい</rt></ruby>じゃなくても<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です！キャラクターのアイデアやコンセプトも<ruby>大切<rt>たいせつ</rt></ruby>に<ruby>選考<rt>せんこう</rt></ruby>します。</li>
+    <li><ruby>応募<rt>おうぼ</rt></ruby><ruby>作品<rt>さくひん</rt></ruby>は<ruby>大東青年会議所<rt>だいとうせいねんかいぎしょ</rt></ruby>の<ruby>広報<rt>こうほう</rt></ruby>や<ruby>活動<rt>かつどう</rt></ruby>で<ruby>使用<rt>しよう</rt></ruby>する<ruby>場合<rt>ばあい</rt></ruby>があります。</li>
+    <li><ruby>公式<rt>こうしき</rt></ruby>キャラクターは<ruby>後日<rt>ごじつ</rt></ruby><ruby>公式<rt>こうしき</rt></ruby>SNSで<ruby>発表<rt>はっぴょう</rt></ruby>いたします。</li>
+    <li>ご<ruby>応募<rt>おうぼ</rt></ruby>いただいた<ruby>作品<rt>さくひん</rt></ruby>（デザイン、<ruby>名前<rt>なまえ</rt></ruby>、<ruby>性格<rt>せいかく</rt></ruby>などのアイデア）は、<ruby>大東青年会議所<rt>だいとうせいねんかいぎしょ</rt></ruby>の<ruby>公式<rt>こうしき</rt></ruby>キャラクターの<ruby>原案<rt>げんあん</rt></ruby>や<ruby>一部<rt>いちぶ</rt></ruby>の<ruby>要素<rt>ようそ</rt></ruby>として<ruby>採用<rt>さいよう</rt></ruby>し、<ruby>プロ<rt>ぷろ</rt></ruby>のイラストレーターによって<b><ruby>改変<rt>かいへん</rt></ruby>・<ruby>統合<rt>とうごう</rt></ruby></b>される<ruby>場合<rt>ばあい</rt></ruby>があります。</li>
+    <li><b>おひとり1<ruby>作品<rt>さくひん</rt></ruby>まで</b>。<ruby>重複<rt>ちょうふく</rt></ruby>の<ruby>応募<rt>おうぼ</rt></ruby>がある<ruby>場合<rt>ばあい</rt></ruby>には、<ruby>最後<rt>さいご</rt></ruby>に<ruby>応募<rt>おうぼ</rt></ruby>した<ruby>作品<rt>さくひん</rt></ruby>を<ruby>審査<rt>しんさ</rt></ruby><ruby>対象<rt>たいしょう</rt></ruby>とさせていただきます。</li>
+  </ul>
+</div>
+</section>
+  <section class="schedule alt" aria-labelledby="schedule-heading">
+<h2 class="tag red" id="schedule-heading">これからのながれ</h2>
+<div class="timeline">
+  <div class="timeline-item"><span class="t-icon">📥</span><div class="t-body"><div class="t-when">5<ruby>月<rt>がつ</rt></ruby><ruby>上旬<rt>じょうじゅん</rt></ruby> 〜 6<ruby>月<rt>がつ</rt></ruby><ruby>上旬<rt>じょうじゅん</rt></ruby></div><div class="t-what">おうぼ うけつけ</div></div></div>
+  <div class="timeline-item"><span class="t-icon">🔍</span><div class="t-body"><div class="t-when">6<ruby>月<rt>がつ</rt></ruby><ruby>中旬<rt>ちゅうじゅん</rt></ruby> 〜 7<ruby>月<rt>がつ</rt></ruby><ruby>上旬<rt>じょうじゅん</rt></ruby></div><div class="t-what">ファイナリスト<ruby>選考<rt>せんこう</rt></ruby></div></div></div>
+  <div class="timeline-item"><span class="t-icon">🌐</span><div class="t-body"><div class="t-when">7<ruby>月<rt>がつ</rt></ruby><ruby>中旬<rt>ちゅうじゅん</rt></ruby> 〜 8<ruby>月<rt>がつ</rt></ruby><ruby>上旬<rt>じょうじゅん</rt></ruby></div><div class="t-what"><ruby>全<rt>ぜん</rt></ruby><ruby>作品<rt>さくひん</rt></ruby> Web<ruby>公開<rt>こうかい</rt></ruby></div></div></div>
+  <div class="timeline-item"><span class="t-icon">🏆</span><div class="t-body"><div class="t-when">8<ruby>月<rt>がつ</rt></ruby><ruby>中旬<rt>ちゅうじゅん</rt></ruby></div><div class="t-what"><ruby>最優秀賞<rt>さいゆうしゅうしょう</rt></ruby> <ruby>決定<rt>けってい</rt></ruby></div></div></div>
+  <div class="timeline-item"><span class="t-icon">🎉</span><div class="t-body"><div class="t-when">10<ruby>月<rt>がつ</rt></ruby></div><div class="t-what">お<ruby>披露目<rt>ひろめ</rt></ruby>！</div></div></div>
+</div>
+</section>
+  <section class="parents" aria-labelledby="parents-heading">
+<h2 class="tag" id="parents-heading">保護者様へ</h2>
+<div class="parents-box">
+  <ul>
+    <li>お<ruby>子<rt>こ</rt></ruby>さまの<ruby>自由<rt>じゆう</rt></ruby>な<ruby>発想<rt>はっそう</rt></ruby>やアイデアを<ruby>大切<rt>たいせつ</rt></ruby>にしたいと<ruby>考<rt>かんが</rt></ruby>えています。ぜひ<ruby>温<rt>あたた</rt></ruby>かく<ruby>見守<rt>みまも</rt></ruby>っていただきますようお<ruby>願<rt>ねが</rt></ruby>いいたします。</li>
+    <li>ご<ruby>応募<rt>おうぼ</rt></ruby>の<ruby>際<rt>さい</rt></ruby>、<ruby>応募<rt>おうぼ</rt></ruby>フォームにいくつか<ruby>入力<rt>にゅうりょく</rt></ruby><ruby>項目<rt>こうもく</rt></ruby>がございますので、<b>保護者様でご応募</b>お<ruby>願<rt>ねが</rt></ruby>いいたします。</li>
+  </ul>
+</div>
+</section>
+  <section class="final-cta" aria-label="最終CTA">
+<p class="final-ready"><ruby>準備<rt>じゅんび</rt></ruby>はいいかな？</p>
+<a class="cta-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSehIFrp-2hXVtTgJXlEwKHVOvr9RqrP-deHixcchdWVtN24WA/viewform?usp=dialog" target="_blank" rel="noopener">▶ おうぼフォームへ</a>
+<p class="final-credit"><ruby>応募期間<rt>おうぼきかん</rt></ruby>　2026.5.6 → 6.10</p>
+</section>
+</main>
+
+<footer class="footer-info">
+<p class="footer-org"><ruby>主催<rt>しゅさい</rt></ruby>　<ruby>一般社団法人<rt>いっぱんしゃだんほうじん</rt></ruby> <ruby>大東青年会議所<rt>だいとうせいねんかいぎしょ</rt></ruby></p>
+<address class="footer-address">
+  <ruby>大東市<rt>だいとうし</rt></ruby><ruby>野崎<rt>のざき</rt></ruby>2-6-1 <ruby>魚捨<rt>うおすて</rt></ruby>ビル301<br>
+  TEL. <a href="tel:0728632700">072-863-2700</a>　/　FAX. 072-863-2701<br>
+  HP <a href="https://daito-jc.jp" target="_blank" rel="noopener">https://daito-jc.jp</a><br>
+  Email <a href="mailto:info@daito-jc.jp">info@daito-jc.jp</a>
+</address>
+</footer>
+</body>
+</html>
