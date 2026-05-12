@@ -140,6 +140,9 @@ main { padding: 0; }
   overflow: hidden;
 }
 .tane-image img { border-radius: 6px; }
+.tane-image-link { display: block; cursor: zoom-in; -webkit-tap-highlight-color: rgba(255,85,136,0.25); }
+.tane-image-link:hover img { opacity: 0.95; }
+.tane-image-link:focus-visible { outline: 3px solid var(--hot); outline-offset: 4px; border-radius: 6px; }
 .tane-image-note {
   margin-top: 10px;
   text-align: center;
@@ -274,7 +277,9 @@ main { padding: 0; }
 
   <section class="tane-image-wrap" aria-label="キャラクターのタネ一覧">
     <div class="tane-image">
-      <img src="assets/character-seeds.jpg" alt="大東市のキャラクターのタネ：飯盛城、ホタル、メジロ、市の花の菊、市の木のサンゴジュ、だんじり、野崎観音、河内れんこん、野崎まいり、特産品、モノづくりのまち、龍光寺、深北緑地、河内音頭、屋形船、飯盛山、寝屋川、輪中、水郷の19項目を紹介するイラスト" width="2339" height="1654" loading="lazy">
+      <a href="assets/character-seeds.png" class="tane-image-link" target="_blank" rel="noopener" aria-label="キャラクターのタネ画像を拡大表示">
+        <img src="assets/character-seeds.jpg" alt="大東市のキャラクターのタネ：飯盛城、ホタル、メジロ、市の花の菊、市の木のサンゴジュ、だんじり、野崎観音、河内れんこん、野崎まいり、特産品、モノづくりのまち、龍光寺、深北緑地、河内音頭、屋形船、飯盛山、寝屋川、輪中、水郷の19項目を紹介するイラスト" width="2339" height="1654" loading="lazy">
+      </a>
     </div>
     <p class="tane-image-note">タップで<ruby>拡大<rt>かくだい</rt></ruby>できるよ</p>
   </section>
