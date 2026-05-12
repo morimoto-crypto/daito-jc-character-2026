@@ -318,6 +318,7 @@
   .step:nth-child(1) { transform: rotate(-0.8deg); }
   .step:nth-child(2) { transform: rotate(0.6deg); }
   .step:nth-child(3) { transform: rotate(-0.4deg); }
+  .step:nth-child(4) { transform: rotate(0.5deg); }
   .step-num {
     background: var(--hot);
     color: white;
@@ -346,6 +347,23 @@
     margin-top: 3px;
     line-height: 1.5;
   }
+  .step-line-btn {
+    display: inline-block;
+    margin-top: 8px;
+    background: #06C755;
+    color: white;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 12px;
+    padding: 7px 14px;
+    border-radius: 18px;
+    border: 2px solid var(--ink);
+    text-decoration: none;
+    box-shadow: 2px 2px 0 var(--ink);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .step-line-btn ruby rt { color: rgba(255,255,255,0.85); }
+  .step-line-btn:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--ink); }
+  .step-line-btn:active { transform: translate(1px, 1px); box-shadow: 1px 1px 0 var(--ink); }
 
   .req-9 {
     display: grid;
@@ -625,18 +643,22 @@
 <a class="tane-link" href="tane.html"><span class="icon">🌱</span><ruby>大東市<rt>だいとうし</rt></ruby>らしさのヒントを<ruby>見<rt>み</rt></ruby>る<span class="arrow">→</span></a>
   </section>
   <section class="how" aria-labelledby="how-heading">
-<h2 class="tag" id="how-heading"><ruby>応募方法<rt>おうぼほうほう</rt></ruby> 3ステップ</h2>
+<h2 class="tag" id="how-heading"><ruby>応募方法<rt>おうぼほうほう</rt></ruby> 4ステップ</h2>
 <div class="step-grid">
   <div class="step">
     <div class="step-num">1</div>
-    <div class="step-body"><b>キャラクターを<ruby>描<rt>か</rt></ruby>こう</b><span><ruby>紙<rt>かみ</rt></ruby>でも<ruby>絵<rt>え</rt></ruby>かきソフトでもOK</span></div>
+    <div class="step-body"><b><ruby>応募用<rt>おうぼよう</rt></ruby><ruby>公式<rt>こうしき</rt></ruby>LINEに<ruby>登録<rt>とうろく</rt></ruby></b><span>お<ruby>知<rt>し</rt></ruby>らせや<ruby>最新<rt>さいしん</rt></ruby><ruby>情報<rt>じょうほう</rt></ruby>はLINEで<ruby>届<rt>とど</rt></ruby>くよ</span><a class="step-line-btn" href="https://lin.ee/qbm9hZG" target="_blank" rel="noopener">▶ <ruby>友<rt>とも</rt></ruby>だち<ruby>追加<rt>ついか</rt></ruby></a></div>
   </div>
   <div class="step">
     <div class="step-num">2</div>
-    <div class="step-body"><b>コンセプトを<ruby>考<rt>かんが</rt></ruby>えよう</b><span><ruby>名前<rt>なまえ</rt></ruby>・<ruby>性格<rt>せいかく</rt></ruby>・<ruby>特技<rt>とくぎ</rt></ruby>・<ruby>好<rt>す</rt></ruby>きな<ruby>場所<rt>ばしょ</rt></ruby>など、どんなキャラクターか<ruby>具体的<rt>ぐたいてき</rt></ruby>に！</span></div>
+    <div class="step-body"><b>キャラクターを<ruby>描<rt>か</rt></ruby>こう</b><span><ruby>紙<rt>かみ</rt></ruby>でも<ruby>絵<rt>え</rt></ruby>かきソフトでもOK</span></div>
   </div>
   <div class="step">
     <div class="step-num">3</div>
+    <div class="step-body"><b>コンセプトを<ruby>考<rt>かんが</rt></ruby>えよう</b><span><ruby>名前<rt>なまえ</rt></ruby>・<ruby>性格<rt>せいかく</rt></ruby>・<ruby>特技<rt>とくぎ</rt></ruby>・<ruby>好<rt>す</rt></ruby>きな<ruby>場所<rt>ばしょ</rt></ruby>など、どんなキャラクターか<ruby>具体的<rt>ぐたいてき</rt></ruby>に！</span></div>
+  </div>
+  <div class="step">
+    <div class="step-num">4</div>
     <div class="step-body"><b>イラストを<ruby>撮影<rt>さつえい</rt></ruby>して<ruby>応募<rt>おうぼ</rt></ruby>フォームへ</b><span><ruby>写真<rt>しゃしん</rt></ruby>をアップロードして<ruby>送信<rt>そうしん</rt></ruby>！</span></div>
   </div>
 </div>
