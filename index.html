@@ -550,6 +550,28 @@
   .footer-address { font-style: normal; }
   .footer-info a { color: var(--hot); text-decoration: none; }
   .footer-info a:hover { text-decoration: underline; }
+
+  /* ヒントページへのリンクボタン */
+  .tane-link {
+    display: block;
+    margin-top: 14px;
+    background: white;
+    border: 2.5px solid var(--ink);
+    border-radius: 14px;
+    padding: 12px 14px;
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 13px;
+    color: var(--ink);
+    text-decoration: none;
+    box-shadow: 4px 4px 0 var(--hot), 4px 4px 0 1px var(--ink);
+    transition: transform 0.15s, box-shadow 0.15s;
+    line-height: 1.4;
+  }
+  .tane-link .icon { display: inline-block; margin-right: 4px; }
+  .tane-link .arrow { color: var(--hot); margin-left: 6px; font-weight: 900; }
+  .tane-link:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--hot), 6px 6px 0 1px var(--ink); }
+  .tane-link:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--hot); }
 </style>
 </head>
 <body>
@@ -599,7 +621,6 @@
 <div class="qa-block">
   <h3 class="q"><ruby>合言葉<rt>あいことば</rt></ruby>は？</h3>
   <div class="motto">
-    <span class="motto-label">— Motto —</span>
     <span class="motto-body"><ruby>明<rt>あか</rt></ruby>るい<ruby>豊<rt>ゆた</rt></ruby>かな<br><ruby>社会<rt>しゃかい</rt></ruby>をつくること</span>
   </div>
   <p class="a" style="margin-top:8px;text-align:center;"><ruby>大東市<rt>だいとうし</rt></ruby>を、もっと<ruby>楽<rt>たの</rt></ruby>しく、もっと<ruby>住<rt>す</rt></ruby>みやすくするために<ruby>活動<rt>かつどう</rt></ruby>しています！</p>
@@ -609,6 +630,7 @@
 <h2 class="tag red" id="what-heading">なにを<ruby>募集<rt>ぼしゅう</rt></ruby>？</h2>
 <h3 class="what-title"><ruby>大東市<rt>だいとうし</rt></ruby>をモチーフにした<br>キャラクターをかいてね！</h3>
 <p class="what-sub"><ruby>大東市<rt>だいとうし</rt></ruby>の<b><ruby>好<rt>す</rt></ruby>きな<ruby>場所<rt>ばしょ</rt></ruby></b>や、<b><ruby>大東市<rt>だいとうし</rt></ruby>らしさ</b>をキャラクターに<ruby>盛<rt>も</rt></ruby>り<ruby>込<rt>こ</rt></ruby>もう！<br>えらばれたアイデアは<ruby>プロ<rt>ぷろ</rt></ruby>のイラストレーター<ruby>様<rt>さま</rt></ruby>が<ruby>本格的<rt>ほんかくてき</rt></ruby>なキャラクターにしてくれるよ！</p>
+<a class="tane-link" href="tane.html"><span class="icon">🌱</span><ruby>大東市<rt>だいとうし</rt></ruby>らしさのヒントを<ruby>見<rt>み</rt></ruby>る<span class="arrow">→</span></a>
   </section>
   <section class="how" aria-labelledby="how-heading">
 <h2 class="tag" id="how-heading"><ruby>応募方法<rt>おうぼほうほう</rt></ruby> 3ステップ</h2>

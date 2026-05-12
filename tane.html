@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大東市のキャラクターのタネ — 大東JC 公式キャラクター大募集！</title>
+<meta name="description" content="大東市らしさのヒント集。飯盛城・河内れんこん・野崎観音・だんじり・河内音頭など、キャラクター作成のアイデアになる大東市の魅力を一覧で紹介します。">
+<meta property="og:title" content="大東市のキャラクターのタネ">
+<meta property="og:description" content="大東市らしさのヒント集。キャラクター作成のアイデアに！">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Hachi+Maru+Pop&family=Yusei+Magic&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #FFF8E1;
+  --paper-2: #FFE9B0;
+  --ink: #1A1A1A;
+  --hot: #FF5588;
+  --gold: #FFD23F;
+  --shadow-sm: 3px 3px 0 var(--ink);
+  --max-w: 760px;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-feature-settings: "palt";
+  line-height: 1.6;
+  font-weight: 500;
+}
+ruby rt { font-size: 0.5em; color: rgba(0,0,0,0.55); font-weight: 500; }
+img { max-width: 100%; height: auto; display: block; }
+
+@media (min-width: 481px) {
+  body { background: #f0ebd8; }
+  header.brand-bar, main, footer.footer-info {
+    max-width: var(--max-w);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.brand-bar {
+  background: white;
+  padding: 9px 16px;
+  border-bottom: 3px solid var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand-bar .name {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 900;
+  font-size: 11px;
+  line-height: 1.15;
+  flex: 1;
+}
+.brand-bar .badge {
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-size: 9px;
+  letter-spacing: 2px;
+  opacity: 0.55;
+}
+
+main { padding: 0; }
+
+.tane-hero {
+  background: var(--gold);
+  padding: 28px 22px 22px;
+  border-bottom: 5px solid var(--ink);
+  position: relative;
+  overflow: hidden;
+}
+.tane-hero::after {
+  content: '';
+  position: absolute; inset: -10% -10% auto auto;
+  width: 180px; height: 180px;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.10) 1.5px, transparent 2px);
+  background-size: 12px 12px;
+  transform: rotate(15deg);
+  pointer-events: none;
+}
+.tane-hero .bubble {
+  display: inline-block;
+  background: white;
+  border: 3px solid var(--ink);
+  border-radius: 30px;
+  padding: 6px 14px;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 11.5px;
+  font-weight: bold;
+  transform: rotate(-2deg);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  z-index: 1;
+}
+.tane-title {
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-size: 30px;
+  color: var(--hot);
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin: 14px 0 8px;
+  text-shadow:
+    -1.5px -1.5px 0 var(--ink),
+    1.5px -1.5px 0 var(--ink),
+    -1.5px 1.5px 0 var(--ink),
+    1.5px 1.5px 0 var(--ink),
+    3px 3px 0 var(--ink);
+  display: inline-block;
+  transform: rotate(-1deg);
+  position: relative;
+  z-index: 1;
+}
+.tane-lead {
+  margin-top: 12px;
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 13px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+.tane-lead b { color: var(--hot); }
+
+.tane-image-wrap {
+  padding: 22px;
+  background: var(--paper);
+  border-bottom: 3px solid var(--ink);
+}
+.tane-image {
+  background: white;
+  border: 2.5px solid var(--ink);
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.tane-image img { border-radius: 6px; }
+.tane-image-note {
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 11px;
+  color: rgba(0,0,0,0.6);
+}
+
+.tane-tips {
+  padding: 24px 22px;
+  background: var(--paper-2);
+  border-bottom: 3px solid var(--ink);
+}
+.tip-title {
+  font-family: 'Mochiy Pop One', sans-serif;
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 14px;
+  background: var(--ink);
+  color: var(--gold);
+  letter-spacing: 1.5px;
+  transform: rotate(-1.5deg);
+  box-shadow: var(--shadow-sm);
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+  margin: 0;
+  font-weight: normal;
+}
+.tip-list {
+  background: white;
+  border: 2.5px solid var(--ink);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-top: 14px;
+  box-shadow: var(--shadow-sm);
+}
+.tip-list ul {
+  margin: 0;
+  padding-left: 18px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 12px;
+  line-height: 1.85;
+  color: rgba(0,0,0,0.85);
+}
+.tip-list li { margin-bottom: 8px; }
+.tip-list li::marker { color: var(--hot); font-weight: 900; }
+.tip-list b { color: var(--hot); font-weight: 900; }
+
+.back-cta {
+  background: var(--paper);
+  text-align: center;
+  padding: 28px 22px;
+}
+.back-button {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--gold);
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border: 3px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--hot), 4px 4px 0 1px var(--ink);
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.back-button:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--hot), 6px 6px 0 1px var(--ink); }
+.back-button:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--hot); }
+.cta-form {
+  display: inline-block;
+  margin-top: 16px;
+  background: var(--hot);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border: 3px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.cta-form:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
+.cta-form:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--ink); }
+
+.footer-info {
+  background: white;
+  padding: 18px 20px;
+  border-top: 3px solid var(--ink);
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 10.5px;
+  line-height: 1.7;
+  color: rgba(0,0,0,0.75);
+}
+.footer-org {
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-size: 12.5px;
+  color: var(--ink);
+  margin: 0 0 6px;
+}
+.footer-address { font-style: normal; }
+.footer-info a { color: var(--hot); text-decoration: none; }
+.footer-info a:hover { text-decoration: underline; }
+
+:focus-visible { outline: 3px solid var(--hot); outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<header class="brand-bar">
+  <div class="name">
+    <ruby>一般社団法人<rt>いっぱんしゃだんほうじん</rt></ruby><br>
+    <ruby>大東青年会議所<rt>だいとうせいねんかいぎしょ</rt></ruby>
+  </div>
+  <div class="badge">DAITO JC · 55th</div>
+</header>
+
+<main>
+
+  <section class="tane-hero" aria-label="ヒーロー">
+    <span class="bubble">アイデアのヒント</span>
+    <h1 class="tane-title"><ruby>大東市<rt>だいとうし</rt></ruby>の<br>キャラクターのタネ！</h1>
+    <p class="tane-lead">
+      <b><ruby>大東市<rt>だいとうし</rt></ruby>らしさ</b>をキャラクターに<ruby>盛<rt>も</rt></ruby>り<ruby>込<rt>こ</rt></ruby>むヒント<ruby>集<rt>しゅう</rt></ruby>だよ。<br>
+      <ruby>知<rt>し</rt></ruby>っているもの、<ruby>好<rt>す</rt></ruby>きなものを<ruby>選<rt>えら</rt></ruby>んで、キャラクターの「タネ」にしてみよう！
+    </p>
+  </section>
+
+  <section class="tane-image-wrap" aria-label="キャラクターのタネ一覧">
+    <div class="tane-image">
+      <img src="assets/character-seeds.jpg" alt="大東市のキャラクターのタネ：飯盛城、ホタル、メジロ、市の花の菊、市の木のサンゴジュ、だんじり、野崎観音、河内れんこん、野崎まいり、特産品、モノづくりのまち、龍光寺、深北緑地、河内音頭、屋形船、飯盛山、寝屋川、輪中、水郷の19項目を紹介するイラスト" width="2339" height="1654" loading="lazy">
+    </div>
+    <p class="tane-image-note">タップで<ruby>拡大<rt>かくだい</rt></ruby>できるよ</p>
+  </section>
+
+  <section class="tane-tips" aria-labelledby="tips-heading">
+    <h2 class="tip-title" id="tips-heading">タネの<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby></h2>
+    <div class="tip-list">
+      <ul>
+        <li><b><ruby>1<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>ぶ</b> — 「ホタル」みたいに、<ruby>気<rt>き</rt></ruby>になるタネを<ruby>1<rt>ひと</rt></ruby>つえらんでキャラクターにしてみよう。</li>
+        <li><b><ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせる</b> — 「<ruby>河内<rt>かわち</rt></ruby>れんこん」＋「だんじり」など、<ruby>2<rt>ふた</rt></ruby>つ<ruby>以上<rt>いじょう</rt></ruby>を<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせてもおもしろい！</li>
+        <li><b>タネ<ruby>以外<rt>いがい</rt></ruby>でもOK</b> — このリストにないものでも、<ruby>大東市<rt>だいとうし</rt></ruby>らしいと<ruby>思<rt>おも</rt></ruby>うものがあったらどんどん<ruby>使<rt>つか</rt></ruby>ってね。</li>
+        <li><b><ruby>性格<rt>せいかく</rt></ruby>や<ruby>特技<rt>とくぎ</rt></ruby>も<ruby>考<rt>かんが</rt></ruby>えよう</b> — タネにあわせて、どんなせいかく？どんなとくぎ？を<ruby>考<rt>かんが</rt></ruby>えると、もっと<ruby>魅力的<rt>みりょくてき</rt></ruby>になるよ。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="back-cta" aria-label="戻る・応募">
+    <a class="back-button" href="./">← <ruby>募集<rt>ぼしゅう</rt></ruby>ページに<ruby>戻<rt>もど</rt></ruby>る</a><br>
+    <a class="cta-form" href="https://docs.google.com/forms/d/e/1FAIpQLSehIFrp-2hXVtTgJXlEwKHVOvr9RqrP-deHixcchdWVtN24WA/viewform?usp=dialog" target="_blank" rel="noopener">▶ おうぼフォームへ</a>
+  </section>
+
+</main>
+
+<footer class="footer-info">
+  <p class="footer-org"><ruby>主催<rt>しゅさい</rt></ruby>　<ruby>一般社団法人<rt>いっぱんしゃだんほうじん</rt></ruby> <ruby>大東青年会議所<rt>だいとうせいねんかいぎしょ</rt></ruby></p>
+  <address class="footer-address">
+    <ruby>大東市<rt>だいとうし</rt></ruby><ruby>野崎<rt>のざき</rt></ruby>2-6-1 <ruby>魚捨<rt>うおすて</rt></ruby>ビル301<br>
+    TEL. <a href="tel:0728632700">072-863-2700</a>　/　FAX. 072-863-2701<br>
+    HP <a href="https://daito-jc.jp" target="_blank" rel="noopener">https://daito-jc.jp</a><br>
+    Email <a href="mailto:info@daito-jc.jp">info@daito-jc.jp</a>
+  </address>
+</footer>
+
+</body>
+</html>
